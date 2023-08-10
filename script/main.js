@@ -65,4 +65,27 @@ $(document).ready(function(){
     Timer = setInterval(moveLeft, 3000);
   });
 
+  $(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+
+    if(scrollTop<=1963) {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+      $('.m_nav_color1').css('background','#066aad');
+    } else if(scrollTop<=2973) {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+      $('.m_nav_color2').css('background','#066aad');
+    } else if(scrollTop<=3545) {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+      $('.m_nav_color3').css('background','#066aad');
+    } else if(scrollTop<=4315) {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+      $('.m_nav_color4').css('background','#066aad');
+    } else if(scrollTop<=5693) {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+      $('.m_nav_color5').css('background','#066aad');
+    } else {
+      $('#m_nav > ul > li span').css('background','rgb(6, 41, 56)');
+    }
+  })
+  
 });
